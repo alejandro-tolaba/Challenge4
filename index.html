@@ -50,7 +50,7 @@
 
 				<!-- .container-->
 				<div class="container">
-					<div class="col-md-12 text-right mb-3"><button type="button" class="btn-close" aria-label="Cerrar">&times;</button></div>
+					<div class="row text-right mb-3"><button type="button" class="btn-close" aria-label="Cerrar">&times;</button></div>
 					<!-- carousel -->
 					<div class="container">
 						<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -61,19 +61,16 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<h4>Carta 1/3 de P1</h4>
 									<img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
 									<h5>Título</h5>
 									<p>Texto.</p>
 								</div>
 								<div class="carousel-item">
-									<h4>Carta 1/3 de P1</h4>
 									<img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
 									<h5>Título</h5>
 									<p>Texto.</p>
 								</div>
 								<div class="carousel-item">
-									<h4>Carta 1/3 de P1</h4>
 									<img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
 									<h5>Título</h5>
 									<p>Texto.</p>
@@ -89,17 +86,56 @@
 							</a>
 						</div>
 					</div><!-- /carousel -->
-				
+
 				</div><!-- /.container -->
 
 			</section><!-- /#pantallaResultados -->
 			
-			<!-- #modalEleccion -->
-			<section id="#modalEleccion">
+			<!-- #pantallaEleccion -->
+			<section id="pantallaEleccion">
 
+				<!-- Modal -->
+				<div class="modal fade" id="pantallaEleccion" tabindex="-1" aria-labelledby="etiquetaModal" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="row">
+									<form>
+										<div class="form-group">
+											<label for="pantallaCargaProducto">Ingresá el producto</label>
+											<input type="text" class="form-control" id="pantallaCargaProducto" placeholder="¿Qué vas a comprar?" required>
+										</div>
+										<div class="form-group">
+											<label for="pantallaCargaIcono">Seleccioná categoría</label>
+											<select class="form-select" id="pantallaCargaIcono" required>
+												<option value="img/Varios.svg">Varios</option>
+												<option value="img/Bebidas.svg">Bebidas</option>
+												<option value="img/Carne.svg">Carne</option>
+												<option value="img/Conservas y comidas preparadas.svg">Conservas y comidas preparadas</option>
+												<option value="img/Frutas y verduras.svg">Frutas y verduras</option>
+												<option value="img/Higiene personal.svg">Higiene personal</option>
+												<option value="img/Lácteos.svg">Lácteos</option>
+												<option value="img/Limpieza.svg">Limpieza</option>
+												<option value="img/Panadería.svg">Panadería</option>
+												<option value="img/Pasta y legumbres.svg">Pasta y legumbres</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="pantallaCargaInfo">Descripción</label>
+											<textarea class="form-control" id="pantallaCargaInfo" rows="3" placeholder="Una breve descripción del producto."></textarea>
+										</div>
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+										<button type="button" class="btn btn-primary" id="pantallaCarga__add">Agregar y Guardar</button>
+									</form>
+								</div>
+							</div>
+							<div class="mb-3">
+							
+						</div>
+					</div>
+				</div>
 				
-
-			</section><!-- /#modalEleccion -->
+			</section><!-- /.container -->
 		</main>
 		<footer></footer>
 		<!-- Bootstrap JS -->
